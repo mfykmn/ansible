@@ -6,6 +6,7 @@
       - garethr/kubeval
       - argoproj/tap
     brew_packages:
+      - cask
       - git
       - tree
       - jq
@@ -43,18 +44,18 @@
       - aylei/tap/kubectl-debug
       - derailed/popeye/popeye
     brew_cask_packages:
-#      - google-japanese-ime TODO: Invalid cask. brew install --cask google-japanese-ime --appdir /Applications
+      - osxfuse # TODO dependencies datawire/blackbird/telepresence 
+      - google-japanese-ime
       - dropbox
       - kindle
       - deepl
       - 1password
-#      - gas-mask TODO: Invalid cask. brew install --cask gas-mask --appdir /Applications
+      - gas-mask
       - discord
-#      - karabiner-elements TODO: Invalid cask. brew install --cask karabiner-elements --appdir /Applications
+      - karabiner-elements
       - docker
-      - osxfuse
 #      - line
-#      - google-chrome
+      - google-chrome
       - slack
       - zoom
       - spotify
