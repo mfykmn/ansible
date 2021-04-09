@@ -19,7 +19,7 @@
       - libev # Locustで使うために入れている
       - cfssl
       - neovim
-      # - goenv TODO: 最新のversionが取得できないので手動で　brew install --HEAD goenv する
+      - goenv
       - pyenv
       - nodenv
       - circleci
@@ -45,6 +45,7 @@
       - derailed/popeye/popeye
     brew_cask_packages:
       - osxfuse # TODO dependencies datawire/blackbird/telepresence 
+      - divvy
       - google-japanese-ime
       - dropbox
       - kindle
@@ -57,9 +58,12 @@
 #      - line
       - google-chrome
       - slack
+      - microsoft-teams
       - zoom
       - spotify
       - notion
+      - intellij-idea
+      - goland
     pip3_packages:
       - botocore==1.15.17
       - locustio==0.13.5
