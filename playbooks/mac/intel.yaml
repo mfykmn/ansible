@@ -57,6 +57,7 @@
       - docker
 #      - line
       - google-chrome
+      - firefox
       - slack
       - microsoft-teams
       - zoom
