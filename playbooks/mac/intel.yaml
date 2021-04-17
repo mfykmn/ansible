@@ -74,17 +74,14 @@
     npm_packages:
       - awsp
   tasks:
-    - name: Update Homebrew
-      homebrew:
-        update_homebrew: yes
+    # https://docs.ansible.com/ansible/2.7/modules/homebrew_tap_module.html
     - name: Add homebrew tap repositories
       homebrew_tap:
-        name: "{{ brew_taps }}"
+        name: "{{ item }}"
         state: "present"
-    - name: Install Homebrew Packages
-      homebrew:
-        name: "{{ brew_packages }}"
-        state: "present"
+      with_items: "{{ brew_taps }}"
+
+    # https://docs.ansible.com/ansible/2.7/modules/homebrew_cask_module.html
     - name: Install Homebrew Cask Packages
       homebrew_cask:
         name: "{{ item }}"
@@ -92,6 +89,17 @@
         install_options: "appdir=/Applications"
         accept_external_apps: yes
       with_items: "{{ brew_cask_packages }}"
+
+    # https://docs.ansible.com/ansible/2.7/modules/homebrew_module.html
+    - name: Update Homebrew
+      homebrew:
+        update_homebrew: yes
+
+    - name: Install Homebrew Packages
+      homebrew:
+        name: "{{ brew_packages }}"
+        state: "present"
+
     - name: Update Pip3
       become: true
       become_method: sudo
