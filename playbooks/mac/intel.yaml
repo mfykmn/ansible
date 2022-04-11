@@ -13,8 +13,10 @@
       - ghq
       - peco
       - fzf
+      # Zsh
       - zsh
       - zsh-completions
+      # ~Zsh
       - tmux
       - libev # Locustで使うために入れている
       - cfssl
@@ -23,12 +25,21 @@
       - pyenv
       - nodenv
       - yarn
+      # ReactNative
+      - watchman
+      - cocoapods
+      # ~ReactNative
       - circleci
       - awscli
+      # Terraform
       - tfenv # TODO: hashicorp/tap/terraform に切り替えるかどうするか悩み中
       - tflint
+      # ~Terraform
+      # Docker
       - docker
       - docker-clean
+      # ~Docker
+      # K8s
       - kubectl
       - kubectx
       - kube-ps1
@@ -45,32 +56,41 @@
       - argoproj/tap/argocd
       - aylei/tap/kubectl-debug
       - derailed/popeye/popeye
+      # ~K8s
     brew_cask_packages:
       - osxfuse # TODO dependencies datawire/blackbird/telepresence 
       - divvy
       - google-japanese-ime
-      - jetbrains-toolbox
       - dropbox
       - kindle
       - deepl
       - 1password
       - gas-mask
-      - discord
       - karabiner-elements
       - docker
-#      - line
+      # Browser
       - google-chrome
       - firefox
+      # ~Browser
+      # Communication Tool
+#      - line
       - slack
+      - discord
       - microsoft-teams
       - zoom
+      # ~Communication Tool
+      # Music
       - spotify
       - spotmenu
+      # ~Mussic
       - notion
       - microsoft-remote-desktop
       - microsoft-excel
+      # IDE
+      - jetbrains-toolbox
       - intellij-idea
       - goland
+      # ~IDE
     pip3_packages:
       - botocore==1.15.17
       - locustio==0.13.5
