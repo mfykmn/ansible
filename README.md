@@ -38,3 +38,22 @@ user@host: ~/workspace/ansible $ ansible-playbook playbooks/mac/intel.yaml
 user@host: ~ $ export PATH="/opt/homebrew/bin:$PATH"
 user@host: ~/workspace/ansible $ ansible-playbook playbooks/mac/apple-m1.yaml
 ```
+
+## Mac(apple M2)
+### Requirement
+- Xcode
+- [Homebrew](https://docs.brew.sh/Installation)
+    ```ShellSession
+    user@host: ~ $ sudo mkdir /opt/homebrew && sudo chown $(whoami):staff /opt/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C /opt/homebrew
+    ```
+- [Ansible](https://formulae.brew.sh/formula/ansible) がインストールされている
+    ```ShellSession
+    user@host: ~ $ export PATH="/opt/homebrew/bin:$PATH"
+    user@host: ~ $ brew install ansible
+    ```
+
+### Usage
+```ShellSession
+user@host: ~ $ export PATH="/opt/homebrew/bin:$PATH"
+user@host: ~/workspace/ansible $ ansible-playbook playbooks/mac/apple-m2.yaml
+```
