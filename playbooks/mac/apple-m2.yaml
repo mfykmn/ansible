@@ -6,11 +6,14 @@
       - git
       - ghq
       - peco
+      - fzf
       - tree
       - jq
       - zsh
       - zsh-completions
       - tmux
+      - nodenv
+      - yarn
     pip3_packages:
       - powerline-shell
   tasks:
