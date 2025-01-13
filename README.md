@@ -55,5 +55,5 @@ user@host: ~/workspace/ansible $ ansible-playbook playbooks/mac/apple-m1.yaml
 ### Usage
 ```ShellSession
 user@host: ~ $ export PATH="/opt/homebrew/bin:$PATH"
-user@host: ~/workspace/ansible $ ansible-playbook playbooks/mac/apple-m2.yaml
+user@host: ~/workspace/ansible $ ansible-playbook playbooks/mac/apple-m4.yaml
 ```
