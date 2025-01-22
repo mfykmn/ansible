@@ -12,7 +12,7 @@
       - zsh-completions
       - mise
       - starship
-      - nushell
+      - font-hack-nerd-font
       - orbstack
   tasks:
     - name: Update Homebrew
