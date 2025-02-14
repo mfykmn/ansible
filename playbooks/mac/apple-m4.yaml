@@ -13,7 +13,10 @@
       - mise
       - starship
       - font-hack-nerd-font
-      - orbstack
+      - docker
+      - colima
+      - qemu # colimaで使用
+      - graphviz # plantumlで使用
   tasks:
     - name: Update Homebrew
       homebrew:
